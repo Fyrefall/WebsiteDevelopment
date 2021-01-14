@@ -1,0 +1,23 @@
+.header{
+
+    &__logo{
+        
+        
+        //img{
+
+        //}
+    }
+
+    &__menu{//Mobile Menu
+
+        >span{
+            display:block;
+            width: 26px;
+            height:2px;
+            background-color: $black;
+
+            
+        }
+
+    }
+}
