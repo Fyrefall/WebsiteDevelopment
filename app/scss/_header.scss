@@ -1,23 +1,77 @@
 .header{
 
+    nav{
+        padding:1.0625rem 1.5rem;
+    }
+
     &__logo{
         
         
-        //img{
-
-        //}
+        img{
+            /*
+            width: 8.8127rem;
+            height:1.375rem;
+            */
+        }
+        
     }
 
     &__menu{//Mobile Menu
 
-        >span{
+        > span {
             display:block;
             width: 26px;
             height:2px;
-            background-color: $black;
+            background-color: $darkBlue;
 
-            
+            &:not(:last-child){
+                margin-bottom: 5px;
+              }
         }
 
+    }
+
+    &__links{
+        a{
+            position:relative;
+            font-size:$font-sm;
+            color:$mediumGrey;
+            transition:color 300ms ease-in-out;
+
+            &:not(:last-child){
+                margin-right:32px;
+            }
+
+            &::before{
+                content:"";
+                display:block;
+                position:absolute;
+                height:5px;
+                left:0;
+                right:0;
+                bottom:-1.875rem;
+                background:linear-gradient(to right, $gold, $black);
+                opacity:0;
+                transition: opacity 300ms ease-in-out;
+            }
+
+            &:hover{
+                color:$darkGrey;
+
+                &::before{
+                    opacity:1;
+                }
+            }
+        }
+    }
+
+    &__cta{
+        font-size:$font-sm;
+        color:$white;
+        transition:opacity 300ms ease-in-out;
+
+        &:hover{
+            opacity: 0.75;
+        }
     }
 }
