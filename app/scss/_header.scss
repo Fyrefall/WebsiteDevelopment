@@ -1,10 +1,9 @@
 .header{
-    position:relative;
+    position: relative;
     z-index: 1;
 
     // Hamburger open styles
     &.open{
-
         .header__toggle{
             >span:first-child{
                 transform: rotate(45deg);
@@ -22,105 +21,92 @@
 
     .overlay{
         //display:none;
-        opacity:0;
-        position:fixed;
-        top:0px;
-        right:0px;
+        opacity: 0;
+        position: fixed;
+        top: 0px;
+        right: 0px;
         bottom: 0px;
-        left:0px;
+        left: 0px;
         background-image: linear-gradient($darkBlue,transparent);
-        
     }
 
     nav{
         position: relative;
         background-color: $white;
-        padding-top:1.0625rem;
-        padding-bottom:1.0625rem;
+        padding-top: 1.0625rem;
+        padding-bottom: 1.0625rem;
     }
 
     &__logo{
-        
         img{
-            /*
-            width: 8.8127rem;
-            height:1.375rem;
-            */
+            /*width: 8.8127rem;height:1.375rem;*/
         }
-        
     }
 
     &__toggle{//Mobile Menu toggle
-
-        > span {
-            display:block;
+        > span{
+            display: block;
             width: 26px;
-            height:2px;
+            height: 2px;
             background-color: $darkBlue;
             transition: all 300ms ease-in-out;
             transform-origin: 3px 1px;
 
             &:not(:last-child){
                 margin-bottom: 5px;
-              }
+            }
         }
     }
 
     &__menu{
-        position:absolute;
-        width:calc(100% - 3rem);
-        left:50%;
-        transform:translateX(- 50%);
-        background:$white;
-        margin-top:1.5rem;
-        padding:1.625rem;
+        position: absolute;
+        width: calc(100% - 3rem);
+        left: 50%;
+        transform: translateX(- 50%);
+        background: $white;
+        margin-top: 1.5rem;
+        padding: 1.625rem;
         border-radius: 5px;
         
-        
-
-        a {
+        a{
             display: block;
-            padding:0.625rem;
-            color:$darkBlue;
+            padding: 0.625rem;
+            color: $darkBlue;
             text-align: center;
         }
     }
 
     &__links{
         a{
-            position:relative;
-            font-size:$font-sm;
-            color:$mediumGrey;
-            transition:color 300ms ease-in-out;
+            position: relative;
+            font-size: $font-sm;
+            color: $mediumGrey;
+            transition: color 300ms ease-in-out;
 
             &:not(:last-child){
                 margin-right:32px;
             }
 
             &::before{
-                content:"";
-                display:block;
-                position:absolute;
-                height:5px;
-                left:0;
-                right:0;
-                bottom:-1.875rem;
-                background:linear-gradient(to right, $gold, $black);
-                opacity:0;
+                content: "";
+                display: block;
+                position: absolute;
+                height: 5px;
+                left: 0;
+                right: 0;
+                bottom: -1.875rem;
+                background: linear-gradient(to right, $gold, $black);
+                opacity: 0;
                 transition: opacity 300ms ease-in-out;
             }
 
             &:hover{
-                color:$darkGrey;
+                color: $darkGrey;
 
                 &::before{
-                    opacity:1;
+                    opacity: 1;
                 }
             }
         }
     }
-
 }
-
-
-

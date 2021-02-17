@@ -2,12 +2,11 @@
     background-color: $veryLightGrey;
     .container{
         @include breakpoint-up(large){
-            display:flex;
+            display: flex;
             align-items: center;
         }
     }
     
-
     &__image{
         position: relative;
         background-image: url('/images/bg-intro-mobile.svg');
@@ -33,10 +32,7 @@
             //border: 1px solid magenta;
         }
 
-        &::before {
-
-            
-
+        &::before{
             @include breakpoint-up(large){
                 content: '';
                 position: absolute;
@@ -49,12 +45,9 @@
                 background-size: 122%;
                 background-position: 0% 83%;
             }
-
         }
 
-        
-
-        &::after {
+        &::after{
             content: '';
             position: absolute;
             width: 100%;
@@ -87,7 +80,5 @@
             order: 1;
             text-align: left;
         }
-
-        
     }
 }

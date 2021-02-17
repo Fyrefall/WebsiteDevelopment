@@ -3,14 +3,12 @@
 }
 
 .article{
-    
-
     &__content{
 
     }
 
     &__grid{
-        display:grid;
+        display: grid;
         grid-template-columns: 1fr;
         gap: 1.875rem;
 
@@ -32,19 +30,18 @@
 
         &:hover{
             transform: scale(1.05);
-
         }
     }
 
     &__image{
-        height:12.5rem;
+        height: 12.5rem;
         background-size: cover;
         background-repeat: no-repeat;
         background-position: center center;
     }
 
     &__text{
-        padding:1.875rem 1.875rem 2.5rem 1.875rem;
+        padding: 1.875rem 1.875rem 2.5rem 1.875rem;
         color: $mediumGrey;
 
         @include breakpoint-up(medium){
@@ -54,15 +51,14 @@
 
     &__author{
         font-size: 0.625rem;
-        margin-bottom:0.75rem;
+        margin-bottom: 0.75rem;
     }
 
     &__title{
         font-size: 1.0625rem;
-        line-height:1.2;
+        line-height: 1.2;
         color: $darkBlue;
-        margin-bottom:0.5rem;
-        
+        margin-bottom: 0.5rem;
     }
 
     &__description{

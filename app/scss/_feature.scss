@@ -1,7 +1,7 @@
 .feature{
 
     background-color: $lightGrey;
-    text-align:center;
+    text-align: center;
 
     @include breakpoint-up(medium){
         text-align: left;
@@ -10,7 +10,7 @@
         margin-bottom: 3.75rem;
 
         @include breakpoint-up(large){
-            width:60%;
+            width: 60%;
         }
     }
 
@@ -23,7 +23,7 @@
 
     &__item{
         //border: 1px solid magenta;
-        padding:0.9375rem;
+        padding: 0.9375rem;
 
         @include breakpoint-up(medium){
             flex: 0 0 50%;
@@ -43,7 +43,6 @@
     }
 
     &__title{
-
         font-size: 1.25rem;
         line-height: 1.15;
         font-weight: 300;

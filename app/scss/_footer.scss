@@ -13,7 +13,7 @@
             "logo links1 links2 cta"
             "social links1 links2 copyright";
             justify-items: start;
-            gap:1rem;
+            gap: 1rem;
         }
     }
 
@@ -22,7 +22,7 @@
     }
 
     &__logo{
-        display:inline-block;
+        display: inline-block;
 
         @include breakpoint-down(medium){
             margin-bottom: 1.875rem;
@@ -40,7 +40,7 @@
 
         a{
             display: inline-block;
-            height:1.25rem;
+            height: 1.25rem;
 
             svg path{
                 transition: fill 150ms ease-in-out;
@@ -52,11 +52,8 @@
         }
 
         a:not(:last-child){
-            
             margin-right: 1rem;
         }
-
-
 
         @include breakpoint-up(large){
             grid-area: social;
@@ -98,13 +95,11 @@
                 color: $gold;
             }
         }
-
-        
     }
 
     &__cta{
         @include breakpoint-up(large){
-            grid-area:cta;
+            grid-area: cta;
 
             text-align: right;
             justify-self: end;
@@ -117,7 +112,7 @@
     }
 
     &__copyright{
-        font-size:0.8125rem;
+        font-size: 0.8125rem;
         color: $mediumGrey;
 
         @include breakpoint-up(large){
