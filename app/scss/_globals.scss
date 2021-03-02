@@ -112,7 +112,15 @@ a, a:visited, a:hover{
     &--pl{
         padding-left: 1.5rem;
     }
+
+    &--pallsm{
+        padding-top: 2rem;
+        padding-right: 1.5rem;
+        padding-bottom: 2rem;
+        padding-left: 1.5rem;
+    }
 }
+
 
 //Flexbox Styles
 .flex{
@@ -132,7 +140,8 @@ a, a:visited, a:hover{
 }
 
 //Buttons
-button, .button{
+//button, 
+.button{
     position: relative;
     display: inline-block;
     padding: 0.875rem 2.1875rem;
@@ -141,7 +150,7 @@ button, .button{
     border: 0;
     border-radius: 50px;
     cursor: pointer;
-    color: $white;
+    color: $darkGrey;
     font-weight: 400;
     font-size: $font-sm;
     transition: opacity 300ms ease-in-out;
@@ -161,6 +170,7 @@ button, .button{
     &:hover::before{
         opacity: 1;
     }
+
 }
 
 //Visibility

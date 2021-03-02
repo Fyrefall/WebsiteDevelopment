@@ -1,0 +1,149 @@
+.acc{
+    background-color: $lightGrey;
+
+    &__content{
+
+    }
+
+    &__section{
+        margin-bottom: 0.625rem;
+    }
+
+    &__accordion{
+        background-color: #ccc;
+        color: $black;
+        cursor: pointer;
+        padding: 1rem;
+        width: 100%;
+        border: none;
+        border-radius: 0.3125rem;
+        text-align: left;
+        outline: none;
+        font-size: $font-med;
+        transition: 0.4s;
+
+        &::after{
+            content: '\002B';
+            color: $black;
+            font-weight: bold;
+            float: right;
+            margin-left: 0.3125rem;
+        }
+    }
+
+    .active{
+        &::after{
+            content: "\2212";
+        }
+    }
+
+    .active, .acc__accordion:hover {
+        background-color: #777;
+    }      
+
+    &__panel{
+        padding: 0 1.125rem;
+        //background-color: $white;
+        max-height: 0;
+        overflow: hidden;
+        transition: max-height 0.2s ease-in-out;
+    }
+
+    //role of officials
+    &__roleGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @include breakpoint-up(large){
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__contactList{
+        color: $darkBlue;
+        text-align: center;
+    }
+
+    &__table{
+        width: 100%;
+    }
+
+    &__left{
+        text-align: right;
+        font-weight: 400;
+        //default
+        &::after{
+            content: " -";
+        }
+    }
+
+    &__right{
+        text-align: left;
+    }
+
+    .empty{
+        visibility: hidden;
+    }
+
+
+    //governance
+    //policies
+    //history
+
+
+    //links
+    &__linkGrid{
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-top: 0.625rem;
+        @include breakpoint-up(large){
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    &__linkItem{
+        //border: 1px solid magenta;
+        margin: 0.3125rem;
+        border-radius: 0.3125rem;
+        background-color: $white;
+        box-shadow: 0rem 0.1875rem 0.75rem rgba(0,0,0,0.3);
+        display: grid;
+        grid-template-columns: 2fr 4fr;
+    }
+
+    &__linkImage{
+        //border: 1px solid magenta;
+        padding: 0.625rem;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    &__linkText{
+        color: $darkBlue;
+        padding: 0.9375rem;
+    }
+
+    &__linkTitle{
+        font-size: $font-lg;
+        font-weight: 400;
+    }
+
+    &__linkDescription{
+
+    }
+
+    &__linkLinks{
+        text-align: center;
+        a{
+            display: block;
+            margin: 0.625rem 0px 0px 0px;
+            padding: 0.3125rem;
+            border-radius: 0.3125rem;
+            background-color: #ccc;
+            color: $darkBlue;
+            width: auto;
+        }
+    }
+}

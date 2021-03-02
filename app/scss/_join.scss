@@ -1,0 +1,121 @@
+.join{
+
+    background-color: $veryLightGrey;
+    
+    &__content{
+
+    }
+
+    //might want to add a grid for right 3 boxes and a grid for all 4 boxes
+    &__grid-outer{
+        
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @include breakpoint-up(medium){
+            grid-template-columns: 1fr 1fr;
+        }
+
+        @include breakpoint-up(large){
+            grid-template-columns: 2fr 3fr;
+        }
+    }
+
+    &__grid-inner{
+        
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0.625rem 0rem 0.625rem 0rem;
+        /*@include breakpoint-up(medium){
+            grid-template-columns: repeat(2, 1fr );
+        }*/
+        @include breakpoint-up(medium){
+            margin: 1.5625rem 0rem 1.5625rem 0rem;    
+        }
+
+        @include breakpoint-up(large){
+            grid-template-columns: 1fr 1fr;
+            margin: 2.8125rem 0rem 2.8125rem 0rem;
+        }
+    }
+
+    
+
+    &__item{
+        background-color: $white;
+        color: $darkGrey;
+        border-radius: 0.3125rem;
+        margin: 0.625rem;
+        //padding: 20px 10px 15px 10px;
+        overflow: hidden;
+        box-shadow: 0rem 0.1875rem 0.75rem rgba(0,0,0,0.3);
+        transition: all 150ms ease-in-out;
+        text-align: center;
+
+        @include breakpoint-up(large){
+            //margin: 60px 10px 60px 10px;
+        }
+
+        &.main{
+            margin-bottom: 0rem;
+            margin-top: 0rem;
+            background-color: $darkBlue;
+            color: $white;
+            
+        }
+
+        &:hover{
+            transform: scale(1.05);
+        }
+
+
+    }
+
+    &__icon{
+        padding-bottom: 0.625rem;
+    }
+
+    &__title{
+        padding-bottom: 1.5rem;
+        font-size: $font-lg;
+        font-weight: bold;
+
+        &.main{
+            font-size: 2.31rem;
+            text-align: left;
+        }
+    }
+
+    &__description{
+
+
+        &.main{
+            text-align: left;
+        }
+    }
+
+    &__cta{
+        margin-top: 1.5625rem;
+        text-align: center;
+    }
+    
+    &__glyph{
+        padding-left: 0.625rem;
+    }
+
+    
+
+    &__form{
+        
+    }
+
+    &__info{
+        
+    }
+
+    //glyphicon styles
+    .symbol{
+        padding-left: 0.25rem;
+    }
+
+}

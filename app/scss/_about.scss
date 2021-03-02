@@ -1,0 +1,96 @@
+.about{
+    background-color: $lightGrey;
+    text-align: left;
+
+    &__content{
+        
+    }
+
+    &__grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        
+       /* @include breakpoint-up(medium){
+            grid-template-columns: 1fr 1fr;
+        }*/
+
+        @include breakpoint-up(large){
+            grid-template-columns: 3fr 4fr;
+        }
+    }
+
+
+    &__image{
+        content: "";
+        position: relative;
+        background-image: url(/images/image-restaurant.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        height: 100%;
+
+        @include breakpoint-down(medium){
+            min-height: 31.25rem; 
+        }
+    }
+
+    &__button{
+
+    }
+
+    &__text{
+
+    }
+
+    &__intro{
+
+    }
+
+    &__iconBoxes{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    &__iconBox{
+        padding: 1rem;
+    }
+
+    &__icon{
+        float: left;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 4rem;
+        height: 4rem;
+        border: 0.125rem solid magenta;
+        border-radius: 3.125rem;
+        font-size: 1.975rem;
+    }
+
+    &__column{
+        margin-left: 5.3125rem;
+    }
+
+    &__title{
+        font-size: 1.25rem;
+        font-weight: 400;
+        color: $darkBlue;
+    }
+
+    &__description{
+
+    }
+
+    &__cta{
+        text-align: center;
+
+        @include breakpoint-up(large){
+            text-align: left;
+            margin-left: 5rem;
+        }
+    }
+    //custom padding
+    &--pall{
+        padding: 3rem;
+    }
+}

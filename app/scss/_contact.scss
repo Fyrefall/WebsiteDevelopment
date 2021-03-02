@@ -1,0 +1,126 @@
+.location{
+    background-color: $lightGrey;
+    
+    &__content{
+
+    }
+
+    &__box{
+        position: relative;
+    }
+
+    &__map{
+        position: relative;
+        box-shadow: 0rem 0.1875rem 0.75rem rgba(0,0,0,0.3);
+
+        iframe{
+            width: 100%;
+            height: 31.25rem;
+            border: none;
+        }
+    }
+
+    &__details{
+        
+        background-color: $darkBlue;
+        
+        
+        border-radius: 0.625rem;
+        margin:1.5625rem 0 1.5625rem 0;
+        
+        box-shadow: 0rem 0.1875rem 0.75rem rgba(0,0,0,0.3);
+
+        @include breakpoint-up(large){
+            position: absolute;
+            width: 19.75rem;
+            margin: 0;
+            top: 1.75rem;
+            right: 4rem;
+        }
+    }
+
+    &__detail{
+        text-align: center;
+        padding: 1rem 0 1rem 0;
+    }
+
+    &__icon{
+        
+        i{
+            font-size: 2.5rem;
+            color: $gold;
+        }
+    }
+
+    &__text{
+        color: $white;
+    }
+}
+
+//opening times included here
+.contact{
+    &__content{
+
+    }
+
+    &__grid{
+        
+        display: grid;
+        grid-template-columns: 1fr;
+
+        @include breakpoint-up(large){
+            grid-template-columns: 2fr 1fr;
+        }
+    }
+
+    &__form{
+        text-align: left;
+        input{
+            width: 100%;
+            padding: 1rem;
+            margin: 0.625rem 0 0.625rem 0;
+        }
+
+        textarea{
+            width: 100%;
+            padding: 1rem;
+            margin: 0.625rem 0 0.625rem 0;
+            overflow: hidden;
+        }
+
+        button{
+            width: 100%;
+            border-radius: 0.1875rem;
+            background-color: $green;
+        }
+    }
+
+    &__times{
+        float: right;
+    }
+
+    &__intro{
+        text-align: center;
+        margin-bottom: 1.25rem;
+
+        @include breakpoint-up(large){
+            text-align: left;
+        }
+    }
+
+    &__toggle{
+        
+    }
+
+    &__indoor{
+        display: none;
+    }
+
+    &__outdoor{
+
+    }
+
+    &__right{
+
+    }
+}

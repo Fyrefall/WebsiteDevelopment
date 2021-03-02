@@ -1,19 +1,45 @@
 //Colours
-$gold:	hsl(45, 100%, 51%);
+//$gold:	hsl(45, 100%, 51%);
+$gold:	hsl(45, 100%, 44%);
 $white: hsl(0, 0%, 100%);
 $black: hsl(0, 0%, 0%);
 
+//greys
 $darkGrey: hsl(210, 10%, 23%);
 $mediumGrey: hsl(208, 7%, 46%);
 $lightGrey: hsl(220, 16%, 96%);
 $veryLightGrey:	hsl(210, 17%, 98%);
+
+//blues
 $darkBlue:	hsl(233, 26%, 24%);
+$mediumBlue: hsl(233, 35%, 40%);
+$lightBlue: hsl(221, 50%, 70%);
+
+
 $blue:	hsl(211, 100%, 50%);
 $green:	hsl(134, 61%, 41%);
 $red: hsl(354, 70%, 54%);
+
+//trial colours
+$verylightGold: #FFCB76;
+$lightGold: #FFB774;
+$mediumgold: #FFA005;
+$darkGold: #BF8A33;
+$veryDarkGold: #A66702;
+
+$niceBlue: hsl(207, 79%, 44%);
+
+$tVerylightBlue: #6B99D3;
+$tLightBlue: #4583D3;
+$tMediumBlue: #1153A7;
+$tDarkBlue: #294E7E;
+$tVeryDarkBlue: #06336D;
+
+
 
 //Font sizes
 $font-sm: 0.875rem; // 14px
 $font-med: 1.125rem; // 18px
 $font-lg: 1.25rem; // 20px
+$font-mlg: 2.25rem; //36px
 $font-xlg: 3.25rem; // 52px
