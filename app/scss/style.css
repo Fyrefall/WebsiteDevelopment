@@ -286,13 +286,6 @@ a, a:visited, a:hover {
 .header {
   position: relative;
   z-index: 1;
-  /*
-    &__logo{
-        img{
-            /*width: 8.8127rem;height:1.375rem;
-        }
-    }
-*/
 }
 
 .header.open .header__toggle > span:first-child {
@@ -325,6 +318,11 @@ a, a:visited, a:hover {
   background-color: white;
   padding-top: 1.0625rem;
   padding-bottom: 1.0625rem;
+}
+
+.header__logo img {
+  width: 12rem;
+  height: auto;
 }
 
 .header__toggle > span {
@@ -680,6 +678,11 @@ a, a:visited, a:hover {
 
 .footer__logo {
   display: inline-block;
+}
+
+.footer__logo img {
+  width: 12rem;
+  height: auto;
 }
 
 @media (max-width: 63.9375em) {
